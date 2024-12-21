@@ -1,0 +1,55 @@
+name: teacher_whiteboard
+description: A comprehensive digital whiteboard app for teachers
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+  flutter: '>=3.13.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.15.0
+  firebase_auth: ^4.7.2
+  firebase_analytics: ^10.4.3
+  firebase_crashlytics: ^3.3.4
+
+  # Authentication
+  google_sign_in: ^6.1.4
+
+  # Services and Utilities
+  shared_preferences: ^2.2.0
+  connectivity_plus: ^4.0.2
+  device_info_plus: ^9.0.3
+  path_provider: ^2.1.0
+
+  # UI and Design
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+  mockito: ^5.4.2
+  build_runner: ^2.4.6
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/translations/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-Light.ttf

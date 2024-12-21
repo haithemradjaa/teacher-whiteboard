@@ -1,0 +1,40 @@
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  errors:
+    # treat missing required parameters as an error
+    missing_required_param: error
+    # treat missing returns as an error
+    missing_return: error
+    # allow having TODOs in the code
+    todo: ignore
+    # Ignore analyzer hints about undocumented public members
+    public_member_api_docs: ignore
+
+linter:
+  rules:
+    # Prevent accidental type casting
+    - avoid_types_on_closure_parameters
+    # Avoid print statements in production code
+    - avoid_print
+    # Prefer using arrow notation for one-line functions
+    - prefer_expression_function_bodies
+    # Require const constructors where possible
+    - prefer_const_constructors
+    # Prefer using null-aware operators
+    - prefer_null_aware_operators
+    # Avoid using unnecessary .toString() calls
+    - unnecessary_string_interpolations
+    # Require braces for all control flow statements
+    - always_require_non_null_named_parameters
+    # Prefer final for local variables
+    - prefer_final_locals
+    # Avoid using unnecessary type checks
+    - unnecessary_type_check
+    # Avoid unnecessary containers
+    - avoid_unnecessary_containers
+    # Prefer single quotes for strings
+    - prefer_single_quotes
+    # Prefer using spread collections
+    - prefer_spread_collections
